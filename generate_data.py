@@ -13,12 +13,24 @@ df = pd.DataFrame({
     'gender':           np.random.choice([0, 1], n),
 })
 
-df['selected'] = (
-    (df['test_score'] > 70) &
-    (df['experience_years'] > 2) &
-    ((df['gender'] == 1) | (df['interview_score'] > 80))
-).astype(int)
+# Strong bias inject — Males much more likely selected
+df['selected'] = 0
+
+for i in range(n):
+    score = df.loc[i, 'test_score']
+    exp   = df.loc[i, 'experience_years']
+    gender = df.loc[i, 'gender']
+
+    if gender == 1:  # Male
+        # Male: easy to get selected
+        if score > 60 and exp > 1:
+            df.loc[i, 'selected'] = 1
+    else:  # Female
+        # Female: very hard to get selected (strong bias)
+        if score > 85 and exp > 8:
+            df.loc[i, 'selected'] = 1
 
 df.to_csv('data.csv', index=False)
-print("✅ data.csv successfully created!")
-print(df.head())
+print("✅ Biased dataset created!")
+print(f"Males selected: {df[df['gender']==1]['selected'].sum()}")
+print(f"Females selected: {df[df['gender']==0]['selected'].sum()}")
