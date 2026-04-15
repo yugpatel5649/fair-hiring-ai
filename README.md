@@ -178,9 +178,7 @@ MIT License — Free to use and modify
 
 📧 Email: yugpatel5649@gmail.com
 
-💼 LinkedIn: https://www.linkedin.com/in/yug-patel-8bba29378/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfhMIluTMR4Ss7UXvLtjbMQ%3D%3
-
-🐙 GitHub: @yugpatel5649
+💼 LinkedIn: https://www.linkedin.com/in/yug-patel-8bba29378/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfhMIluTMR4Ss7UXvLtjbMQ%3D%3🐙 GitHub: @yugpatel5649
 
 🔮 Future Improvements
 
