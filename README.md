@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 > **AI-powered hiring system that detects and eliminates gender bias using Fairlearn — with SHAP explainability to show WHY every decision was made.**
-
+  “An AI-based hiring system that ensures fair and unbiased candidate selection using advanced machine learning and explainable AI.This project uses AI to remove bias from hiring decisions and provide transparent, explainable results for every candidate.”
 ---
 
 ## 🚨 The Problem
